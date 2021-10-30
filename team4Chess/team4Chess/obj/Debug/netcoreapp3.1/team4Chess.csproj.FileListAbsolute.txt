@@ -1,0 +1,7 @@
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csprojAssemblyReference.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Form1.resources
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Properties.Resources.resources
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.GenerateResource.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfoInputs.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfo.cs
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.CoreCompileInputs.cache
