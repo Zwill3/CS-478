@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ChessConsole;
+using ChessBoardModel2;
 
 namespace team4Chess
 {
