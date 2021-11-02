@@ -1,0 +1,10 @@
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\bin\Debug\netcoreapp3.1\ChessBoardModel2.deps.json
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\bin\Debug\netcoreapp3.1\ChessBoardModel2.dll
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\bin\Debug\netcoreapp3.1\ChessBoardModel2.pdb
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\obj\Debug\netcoreapp3.1\ChessBoardModel2.csproj.AssemblyReference.cache
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\obj\Debug\netcoreapp3.1\ChessBoardModel2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\obj\Debug\netcoreapp3.1\ChessBoardModel2.AssemblyInfoInputs.cache
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\obj\Debug\netcoreapp3.1\ChessBoardModel2.AssemblyInfo.cs
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\obj\Debug\netcoreapp3.1\ChessBoardModel2.csproj.CoreCompileInputs.cache
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\obj\Debug\netcoreapp3.1\ChessBoardModel2.dll
+C:\Users\echos\source\repos\Chessboard_Console\ChessBoardModel2\obj\Debug\netcoreapp3.1\ChessBoardModel2.pdb
