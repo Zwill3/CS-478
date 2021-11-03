@@ -2,63 +2,101 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ChessClasses
+namespace ChessBoardModel2
 {
-    public abstract class Piece
+   public class Piece
     {
-        public PieceColor Color
-        {
-            private set;
-            get;
-        }
-
         public bool Moved
         {
             protected set;
             get;
         }
 
-        //Possible moves
-        public abstract IEnumerable<Board.Cell> PossibleMoves
+        public Piece()
         {
-            get;
-        }
-
-        //Legal Moves
-        public List<Board.Cell> LegalMoves
-        {
-            private set;
-            get;
-        }
-
-        public Board.Cell Parent
-        {
-            private set;
-            get;
-        }
-
-        public Piece(PieceColor color)
-        {
-            Color = color;
             Moved = false;
-            LegalMoves = new List<Board.Cell>();
         }
 
-        // Called when the piece is first placed or when the piece is replaced after promotion.
-        public void OnPlace(Board.Cell cell)
+        public List<int[]> PawnMoves(bool[,] currentBoard, int y, int x, bool whitePiece)
         {
-            Parent = cell;
-        }
+            List < int[] > possibleMoves = new List<int[]>();
+            //int[] tempRay;
+            if (whitePiece)
+            {
+                if (y > 0)
+                {
+                    if (currentBoard[x, y-1]==false)
+                    {
+                        int[] tempRay = new int[2] { x, y-1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                    if (y == 6)
+                    {
+                        if (!currentBoard[x, y-2]) 
+                        {
+                            int[] tempRay = new int[2] { x, y-2 };
+                            possibleMoves.Add(tempRay); 
+                        }
+                    }
+                    if (x<7)
+                    {
+                        if (currentBoard[x + 1, y - 1])
+                        {
+                            int[] tempRay = new int[2] { x + 1, y - 1 };
+                            possibleMoves.Add(tempRay);
+                        }
+                    }
+                    if (x > 0)
+                    {
+                        if (currentBoard[x - 1, y - 1])
+                        {
+                            int[] tempRay = new int[2] { x - 1, y - 1 };
+                            possibleMoves.Add(tempRay);
+                        }
+                    }
+                }
+            }
+            /*else
+            {
+                if (y < 7)
+                {
+                    if (!currentBoard[x, y + 1])
+                    {
+                        int[] tempRay = new int[2] { x, y + 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                    if (y == 1)
+                    {
+                        if (!currentBoard[x, y + 2])
+                        {
+                            int[] tempRay = new int[2] { x, y + 2 };
+                            possibleMoves.Add(tempRay);
+                        }
+                    }
+                    if (x < 7)
+                    {
+                        if (currentBoard[x + 1, y + 1])
+                        {
+                            int[] tempRay = new int[2] { x + 1, y + 1 };
+                            possibleMoves.Add(tempRay);
+                        }
+                    }
+                    if (x > 0)
+                    {
+                        if (currentBoard[x - 1, y + 1])
+                        {
+                            int[] tempRay = new int[2] { x - 1, y + 1 };
+                            possibleMoves.Add(tempRay);
+                        }
+                    }
+                }
+            }*/
 
-        // Called when the piece is moved.
-        public void OnMove(Board.Cell cell)
-        {
-            Parent = cell;
-            Moved = true;
+            return possibleMoves;
         }
 
         // Recalculates the possible moves and updates potential hits
-        public abstract void Recalculate();
+        /*public abstract void Recalculate();
 
         public abstract bool IsBlockedIfMove(Board.Cell from, Board.Cell to, Board.Cell blocked);
 
@@ -67,7 +105,7 @@ namespace ChessClasses
         protected virtual bool canHit(Board.Cell cell)
         {
             return cell != null && cell.Piece != null && cell.Piece.Color != Color;
-        }
+        }*/
     }
 }
 

@@ -484,6 +484,7 @@ namespace team4Chess
             this.F2.Size = new System.Drawing.Size(100, 100);
             this.F2.TabIndex = 38;
             this.F2.UseVisualStyleBackColor = true;
+            this.F2.Click += new System.EventHandler(this.F2_Click);
             // 
             // F3
             // 
@@ -664,6 +665,7 @@ namespace team4Chess
             this.H7.Size = new System.Drawing.Size(100, 100);
             this.H7.TabIndex = 56;
             this.H7.UseVisualStyleBackColor = true;
+            this.H7.Click += new System.EventHandler(this.OnClick);
             // 
             // G7
             // 
