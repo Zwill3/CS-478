@@ -17,95 +17,230 @@ namespace ChessBoardModel2
             Moved = false;
         }
 
+        //Highlight all possible pawn moves
         public List<int[]> PawnMoves(bool[,] currentBoard, int y, int x, bool whitePiece)
         {
             List < int[] > possibleMoves = new List<int[]>();
-            //int[] tempRay;
+            int[] tempRay;
             if (whitePiece)
             {
                 if (y > 0)
                 {
-                    if (currentBoard[x, y-1]==false)
+                    if (currentBoard[y-1, x]==false)
                     {
-                        int[] tempRay = new int[2] { x, y-1 };
+                        tempRay = new int[2] { x, y-1 };
                         possibleMoves.Add(tempRay);
                     }
                     if (y == 6)
                     {
-                        if (!currentBoard[x, y-2]) 
+                        if (!currentBoard[y-2, x]) 
                         {
-                            int[] tempRay = new int[2] { x, y-2 };
+                            tempRay = new int[2] { x, y-2 };
                             possibleMoves.Add(tempRay); 
                         }
                     }
                     if (x<7)
                     {
-                        if (currentBoard[x + 1, y - 1])
+                        if (currentBoard[y-1, x+1])
                         {
-                            int[] tempRay = new int[2] { x + 1, y - 1 };
+                            tempRay = new int[2] { x + 1, y - 1 };
                             possibleMoves.Add(tempRay);
                         }
                     }
                     if (x > 0)
                     {
-                        if (currentBoard[x - 1, y - 1])
+                        if (currentBoard[y - 1, x - 1])
                         {
-                            int[] tempRay = new int[2] { x - 1, y - 1 };
+                            tempRay = new int[2] { x - 1, y - 1 };
                             possibleMoves.Add(tempRay);
                         }
                     }
                 }
             }
-            /*else
+            else
             {
                 if (y < 7)
                 {
-                    if (!currentBoard[x, y + 1])
+                    if (!currentBoard[y+1, x])
                     {
-                        int[] tempRay = new int[2] { x, y + 1 };
+                        tempRay = new int[2] { x, y + 1 };
                         possibleMoves.Add(tempRay);
                     }
                     if (y == 1)
                     {
-                        if (!currentBoard[x, y + 2])
+                        if (!currentBoard[y+2, x])
                         {
-                            int[] tempRay = new int[2] { x, y + 2 };
+                            tempRay = new int[2] { x, y + 2 };
                             possibleMoves.Add(tempRay);
                         }
                     }
                     if (x < 7)
                     {
-                        if (currentBoard[x + 1, y + 1])
+                        if (currentBoard[y + 1, x + 1])
                         {
-                            int[] tempRay = new int[2] { x + 1, y + 1 };
+                            tempRay = new int[2] { x + 1, y + 1 };
                             possibleMoves.Add(tempRay);
                         }
                     }
                     if (x > 0)
                     {
-                        if (currentBoard[x - 1, y + 1])
+                        if (currentBoard[y + 1, x-1])
                         {
-                            int[] tempRay = new int[2] { x - 1, y + 1 };
+                            tempRay = new int[2] { x - 1, y + 1 };
                             possibleMoves.Add(tempRay);
                         }
                     }
                 }
-            }*/
+            }
 
             return possibleMoves;
         }
 
-        // Recalculates the possible moves and updates potential hits
-        /*public abstract void Recalculate();
-
-        public abstract bool IsBlockedIfMove(Board.Cell from, Board.Cell to, Board.Cell blocked);
-
-        public abstract char Char { get; }
-
-        protected virtual bool canHit(Board.Cell cell)
+        //Highlight all possible knight moves.
+        public List<int[]> KnightMoves(bool[,] currentBoard, int y, int x)
         {
-            return cell != null && cell.Piece != null && cell.Piece.Color != Color;
-        }*/
+            List<int[]> possibleMoves = new List<int[]>();
+            int[] tempRay;
+            if (x > 1)
+            {
+                if (y > 1)
+                {
+                    if(!currentBoard[y-2, x - 1])
+                    {
+                        tempRay = new int[2] { x - 1, y - 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+                    if (!currentBoard[y - 1, x - 2])
+                    {
+                        tempRay = new int[2] { x - 2, y - 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+                if (y == 1)
+                {
+                    if (!currentBoard[y - 1, x - 2])
+                    {
+                        tempRay = new int[2] { x - 2, y - 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+
+                if (y < 6)
+                {
+                    if(!currentBoard[y+2, x - 1])
+                    {
+                        tempRay = new int[2] { x - 1, y + 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+                    if (!currentBoard[y + 1, x - 2])
+                    {
+                        tempRay = new int[2] { x - 2, y + 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+                if (y == 6)
+                {
+                    if (!currentBoard[y + 1, x - 2])
+                    {
+                        tempRay = new int[2] { x - 2, y + 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+            }
+
+            if (x == 1)
+            {
+                if (y > 1)
+                {
+                    if (!currentBoard[y - 2, x - 1])
+                    {
+                        tempRay = new int[2] { x - 1, y - 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+                if (y < 6)
+                {
+                    if (!currentBoard[y + 2, x - 1])
+                    {
+                        tempRay = new int[2] { x - 1, y + 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+
+                }
+            }
+
+            if (x < 6)
+            {
+                if (y > 1)
+                {
+                    if (!currentBoard[y - 2, x + 1])
+                    {
+                        tempRay = new int[2] { x + 1, y - 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+                    if (!currentBoard[y - 1, x + 2])
+                    {
+                        tempRay = new int[2] { x + 2, y - 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+                if (y == 1)
+                {
+                    if (!currentBoard[y - 1, x + 2])
+                    {
+                        tempRay = new int[2] { x + 2, y - 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+
+                if (y < 6)
+                {
+                    if (!currentBoard[y + 2, x + 1])
+                    {
+                        tempRay = new int[2] { x + 1, y + 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+                    if (!currentBoard[y + 1, x + 2])
+                    {
+                        tempRay = new int[2] { x + 2, y + 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+                if (y == 6)
+                {
+                    if (!currentBoard[y + 1, x + 2])
+                    {
+                        tempRay = new int[2] { x + 2, y + 1 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+            }
+
+            if (x == 6)
+            {
+                if (y > 1)
+                {
+                    if (!currentBoard[y - 2, x + 1])
+                    {
+                        tempRay = new int[2] { x + 1, y - 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+                }
+                if (y < 6)
+                {
+                    if (!currentBoard[y + 2, x + 1])
+                    {
+                        tempRay = new int[2] { x + 1, y + 2 };
+                        possibleMoves.Add(tempRay);
+                    }
+
+                }
+            }
+
+            return possibleMoves;
+        }
+
+        //Highlight all possible Bishop moves
     }
 }
 

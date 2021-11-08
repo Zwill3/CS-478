@@ -42,6 +42,7 @@ namespace team4Chess
                     UpdateBoard();
                     //Sets the buttons default OnClick method to the custom default
                     this.buttonGrid[i, j].Click += OnClick;
+                    buttonGrid[i, j].Tag = new Point(i, j);
                 }
             }
         }
@@ -86,23 +87,31 @@ namespace team4Chess
 
         private void OnClick(object sender, EventArgs e)
         {
-            ////Checks for if the original component has its own on-click method to run.
-            //ControlClick?.Invoke(sender, e);
+            //Checks for if the original component has its own on-click method to run.
+            ControlClick?.Invoke(sender, e);
 
-            ////Code for the new default OnClick method
-            //if (!pieceSelected)
-            //{
-            //    for(int i = 0; i<8; i++)
-            //    {
-            //        for(int j = 0; j<8; j++)
-            //        {
-            //            buttonGrid[i, j].Enabled = false;
-            //        }
-            //    }
+            //Get the coordinate of the button that was clicked
+            Button pressedButton = (Button)sender;
+            Point location = (Point) pressedButton.Tag;
 
+            //Code for the new default OnClick method
+            if (!pieceSelected)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        buttonGrid[i, j].Enabled = false;
+                    }
+                }
+            }
 
-            //}
-
+            List<int[]> legalMoves = new List<int[]>();
+            legalMoves = chessBoard.QueueMoves(location.X, location.Y);
+            foreach (int[] ray in legalMoves)
+            {
+                buttonGrid[ray[1], ray[0]].Enabled = true;
+            }
         }
 
         private void UpdateBoard()
@@ -114,25 +123,6 @@ namespace team4Chess
                     buttonGrid[i, j].Enabled = true;
                     if(buttonGrid[i,j].Image == null) { buttonGrid[i, j].Enabled = false; }
                 }
-            }
-        }
-
-        private void F2_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < 8; i++)
-            {
-                for (int j = 0; j < 8; j++)
-                {
-                    buttonGrid[i, j].Enabled = false;
-                }
-            }
-
-            List<int[]> legalMoves = new List<int[]>();
-            legalMoves = chessBoard.QueueMoves(6, 5);
-            foreach(int[] ray in legalMoves)
-            {
-                MessageBox.Show(ray[1].ToString());
-                buttonGrid[ray[0], ray[1]].Enabled = true;
             }
         }
     }

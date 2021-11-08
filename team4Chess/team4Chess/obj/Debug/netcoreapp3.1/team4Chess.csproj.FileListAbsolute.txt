@@ -13,3 +13,4 @@ C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.dll
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.pdb
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.genruntimeconfig.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csprojAssemblyReference.cache

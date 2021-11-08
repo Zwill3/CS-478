@@ -108,8 +108,26 @@ namespace ChessBoardModel2
             {
                 return pieceManager.PawnMoves(currentBoard, x, y, TheGrid[x, y].isWhite);
             }
+            else if (TheGrid[x, y].isKnight)
+            {
+                return pieceManager.KnightMoves(currentBoard, x, y);
+            }
 
             return legalMoves;
+        }
+
+        public bool[,] TestBoard()
+        {
+            bool[,] currentBoard = new bool[8, 8];
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    currentBoard[i, j] = TheGrid[i, j].CurrentlyOccupied;
+                }
+            }
+
+            return currentBoard;
         }
 
         public void MarkNextLegalMoves(Cell currentCell, string chessPiece)
