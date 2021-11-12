@@ -16,10 +16,14 @@ namespace team4Chess
         //The class variable EventHandler is used to override the OnClick method of buttons
         //The buttonGrid class variable is the visual representation of the board
         //The pieceSelected class variable is used to determine whether the player is deciding a piece to move or about to move a piece.
+        //The chessBoard class variable allows the usage of board class methods
+        //The moverX and moverY variables hold the location of piece that is attempting to be moved.
         public event EventHandler ControlClick;
         Board chessBoard;
         Button[,] buttonGrid;
         bool pieceSelected = false;
+        int moverX;
+        int moverY;
 
         public Form1()
         {
@@ -32,13 +36,12 @@ namespace team4Chess
             //for displaying the chess game properly.
             //0,0 = A8 making the top left corner of the board our start of the 2D array
             chessBoard = new Board();
-            buttonGrid = new Button[8, 8] { { A8, B8, C8, D8, E8, F8, G8, H8 }, { A7, B7, C7, D7, E7, F7, G7, H7 }, { A6, B6, C6, D6, E6, F6, G6, H6 }, { A5, B5, C5, D5, E5, F5, G5, H5 }, { A4, B4, C4, D4, E4, F4, G4, H4 }, { A3, B3, C3, D3, E3, F3, G3, H3 }, { A2, B2, C2, D2, E2, F2, G2, H2 }, { A1, B1, C1, D1, E1, F1, G1, H1 } };
+            buttonGrid = new Button[8, 8] { { A8, A7, A6, A5, A4, A3, A2, A1 }, { B8, B7, B6, B5, B4, B3, B2, B1 }, { C8, C7, C6, C5, C4, C3, C2, C1 }, { D8, D7, D6, D5, D4, D3, D2, D1 }, { E8, E7, E6, E5, E4, E3, E2, E1 }, { F8, F7, F6, F5, F4, F3, F2, F1 }, { G8, G7, G6, G5, G4, G3, G2, G1 }, { H8, H7, H6, H5, H4, H3, H2, H1 } };
             for (int i = 0; i<8; i++)
             {
                 for (int j = 0; j<8; j++)
                 {
                     //Initial update board will set up the board for the start of the game
-                    buttonGrid[i,j].Image = UpdateButton(i, j);
                     UpdateBoard();
                     //Sets the buttons default OnClick method to the custom default
                     this.buttonGrid[i, j].Click += OnClick;
@@ -47,7 +50,7 @@ namespace team4Chess
             }
         }
 
-        //The update board method gets the piece type from the ChessBoard and uses that to display the proper image.
+        //The UpdateButton method gets the piece type from the ChessBoard and uses that to display the proper image.
         private Image UpdateButton(int xCoord, int yCoord)
         {
             int type = chessBoard.GetType(xCoord, yCoord);
@@ -97,6 +100,11 @@ namespace team4Chess
             //Code for the new default OnClick method
             if (!pieceSelected)
             {
+                //Change pieceSelected to ready the next part on the next click as well set the coords of the moving piece
+                pieceSelected = true;
+                moverX = location.X;
+                moverY = location.Y;
+                //Disable all buttons
                 for (int i = 0; i < 8; i++)
                 {
                     for (int j = 0; j < 8; j++)
@@ -104,13 +112,23 @@ namespace team4Chess
                         buttonGrid[i, j].Enabled = false;
                     }
                 }
+                //Queue all the moves a piece can make
+                List<int[]> legalMoves = new List<int[]>();
+                legalMoves = chessBoard.QueueMoves(location.X, location.Y);
+                //Enable all the buttons that a move can be made at in order to carry out a move
+                foreach (int[] ray in legalMoves)
+                {
+                    buttonGrid[ray[0], ray[1]].Enabled = true;
+                }
             }
-
-            List<int[]> legalMoves = new List<int[]>();
-            legalMoves = chessBoard.QueueMoves(location.X, location.Y);
-            foreach (int[] ray in legalMoves)
+            else
             {
-                buttonGrid[ray[1], ray[0]].Enabled = true;
+                pieceSelected = false;
+                //if (location.X != moverX && location.Y != moverY)
+                //{
+                    chessBoard.CompleteMove(moverX, moverY, location.X, location.Y);
+                //}
+                UpdateBoard();
             }
         }
 
@@ -120,6 +138,7 @@ namespace team4Chess
             {
                 for(int j=0; j<8; j++)
                 {
+                    buttonGrid[i, j].Image = UpdateButton(i, j);
                     buttonGrid[i, j].Enabled = true;
                     if(buttonGrid[i,j].Image == null) { buttonGrid[i, j].Enabled = false; }
                 }
