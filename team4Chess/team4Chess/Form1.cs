@@ -124,10 +124,10 @@ namespace team4Chess
             else
             {
                 pieceSelected = false;
-                //if (location.X != moverX && location.Y != moverY)
-                //{
+                if (!(moverX == location.X && moverY == location.Y))
+                {
                     chessBoard.CompleteMove(moverX, moverY, location.X, location.Y);
-                //}
+                }
                 UpdateBoard();
             }
         }

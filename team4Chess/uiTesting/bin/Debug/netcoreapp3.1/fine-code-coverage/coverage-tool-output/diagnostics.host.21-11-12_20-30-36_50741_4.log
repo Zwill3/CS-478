@@ -1,0 +1,151 @@
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:36.802, 123177547678, testhost.dll, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 65224],[--endpoint, 127.0.0.1:065224],[--role, client],[--parentprocessid, 6316],[--diag, C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\coverage-tool-output\diagnostics.host.21-11-12_20-30-36_50741_4.log],[--tracelevel, 4],[--datacollectionport, 65223],[--telemetryoptedin, false]
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:36.811, 123177592908, testhost.dll, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '6316'
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:36.822, 123177700249, testhost.dll, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:065224'
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:36.847, 123177952847, testhost.dll, SocketClient.Start: connecting to server endpoint: 127.0.0.1:065224
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:36.856, 123178042353, testhost.dll, DefaultEngineInvoker.ConnectToDatacollector: Connecting to datacollector, port: 65223
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:36.859, 123178074130, testhost.dll, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:065224
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:36.862, 123178101644, testhost.dll, Trying to connect to server on socket : 127.0.0.1:65223 
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:36.863, 123178109820, testhost.dll, Connected to server, and starting MessageLoopAsync
+TpTrace Verbose: 0 : 17840, 1, 2021/11/12, 20:30:36.863, 123178110332, testhost.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 17840, 10, 2021/11/12, 20:30:36.867, 123178149057, testhost.dll, Connected to the server successfully 
+TpTrace Information: 0 : 17840, 10, 2021/11/12, 20:30:36.867, 123178150338, testhost.dll, Using the buffer size of 16384 bytes
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:36.869, 123178168389, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:36.869, 123178168743, testhost.dll, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:36.869, 123178174202, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Information: 0 : 17840, 11, 2021/11/12, 20:30:36.871, 123178185768, testhost.dll, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.065, 123180131292, testhost.dll, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 5
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.109, 123180573146, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Logging TestHost Diagnostics in file: C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\coverage-tool-output\\diagnostics.host.21-11-12_20-30-36_50741_4.log"}}
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.109, 123180574760, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.110, 123180575382, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.115, 123180627016, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\build-output\\NUnit3.TestAdapter.dll"
+]
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.115, 123180628859, testhost.dll, Execution Session Initialize.
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.124, 123180723035, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.124, 123180723989, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.127, 123180753445, testhost.dll, TestExecutorService: Loading the extensions
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.129, 123180766569, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\build-output\\uiTesting.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <ResultsDirectory>C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n    <TargetPlatform>X64</TargetPlatform>\r\n    <TargetFrameworkVersion>.NETCoreApp,Version=v3.1</TargetFrameworkVersion>\r\n    <DesignMode>False</DesignMode>\r\n    <CollectSourceInformation>False</CollectSourceInformation>\r\n  </RunConfiguration>\r\n  <LoggerRunSettings>\r\n    <Loggers>\r\n      <Logger friendlyName=\"blame\" enabled=\"True\" />\r\n      <Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\5.0.201\\vstest.console.dll\" enabled=\"True\" />\r\n    </Loggers>\r\n  </LoggerRunSettings>\r\n  <DataCollectionRunSettings>\r\n    <DataCollectors>\r\n      <DataCollector friendlyName=\"blame\" enabled=\"True\">\r\n        <Configuration>\r\n          <ResultsDirectory>C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n        </Configuration>\r\n      </DataCollector>\r\n    </DataCollectors>\r\n  </DataCollectionRunSettings>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.129, 123180767981, testhost.dll, Execution started.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.129, 123180774468, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.131, 123180787376, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.131, 123180791045, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.131, 123180791667, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.136, 123180838874, testhost.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.138, 123180861133, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.138, 123180862226, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.138, 123180862845, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.138, 123180863484, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.138, 123180864571, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.140, 123180878382, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.146, 123180936281, testhost.dll, AssemblyResolver.OnResolve: NUnit3.TestAdapter: Resolving assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.147, 123180953558, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, from path: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.150, 123180985079, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.api: Resolving assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.152, 123180996858, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.api, from path: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\nunit.engine.api.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.159, 123181066229, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.159, 123181071118, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.159, 123181072025, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.159, 123181073114, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.159, 123181074172, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.166, 123181136122, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.169, 123181168034, testhost.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.170, 123181176695, testhost.dll, TestExecutorExtensionManager: Loading executor NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.170, 123181177350, testhost.dll, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.171, 123181188564, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestSettingsProviderPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ISettingsProvider
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.171, 123181192284, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.171, 123181192907, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.171, 123181193459, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181195522, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181196246, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181196722, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181197120, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181197569, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181198012, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181198548, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181201128, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181201661, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181202146, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181202882, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.172, 123181203332, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.173, 123181215063, testhost.dll, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.174, 123181215702, testhost.dll, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.322, 123182700464, testhost.dll, TestDiscoveryManager: Discovering tests from sources C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\uiTesting.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182726051, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestDiscovererPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182728678, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182729328, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182729936, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182731565, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182732122, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182732606, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182732979, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182733331, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182733716, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.325, 123182734266, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.328, 123182761635, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.328, 123182763246, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Failed to load assembly.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.329, 123182773194, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.329, 123182774230, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.329, 123182774769, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolved from cache.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.329, 123182775227, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.330, 123182775706, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.330, 123182784621, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.331, 123182788785, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.331, 123182789361, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolved from cache.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.331, 123182789940, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.331, 123182790330, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.332, 123182804404, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.332, 123182805280, testhost.dll, TestPluginCache: Discoverers are 'NUnit.VisualStudio.TestAdapter.NUnit3TestDiscoverer, NUnit3.TestAdapter, Version=3.16.1.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.333, 123182805780, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.333, 123182806593, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.333, 123182806977, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.344, 123182923058, testhost.dll, PEReaderHelper.GetAssemblyType: Determined assemblyType:'Managed' for source: 'C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\uiTesting.dll'
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.350, 123182982209, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.351, 123182993640, testhost.dll, AssemblyResolver.OnResolve: nunit.engine: Resolving assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.353, 123183005372, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine, from path: C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\nunit.engine.dll
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.367, 123183150252, testhost.dll, NUnit Adapter 3.16.1.0: Test execution started
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.367, 123183152084, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.16.1.0: Test execution started"}}
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.377, 123183253341, testhost.dll, Running all tests in C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\uiTesting.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.377, 123183254653, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Running all tests in C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\build-output\\uiTesting.dll"}}
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.431, 123183789832, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Resolving assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.431, 123183792204, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Failed to load assembly.
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.561, 123185088342, testhost.dll,    NUnit couldn't find any tests in C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\uiTesting.dll
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.561, 123185089819, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"   NUnit couldn't find any tests in C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\build-output\\uiTesting.dll"}}
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.561, 123185095219, testhost.dll, NUnit Adapter 3.16.1.0: Test execution complete
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.562, 123185096473, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.16.1.0: Test execution complete"}}
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.567, 123185154059, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://NUnit3TestExecutor
+TpTrace Warning: 0 : 17840, 4, 2021/11/12, 20:30:37.569, 123185166348, testhost.dll, No test is available in C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\uiTesting\bin\Debug\netcoreapp3.1\fine-code-coverage\build-output\uiTesting.dll. Make sure that test discoverer & executors are registered and platform & framework version settings are appropriate and try again.
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.569, 123185168279, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":1,"Message":"No test is available in C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\uiTesting\\bin\\Debug\\netcoreapp3.1\\fine-code-coverage\\build-output\\uiTesting.dll. Make sure that test discoverer & executors are registered and platform & framework version settings are appropriate and try again."}}
+TpTrace Information: 0 : 17840, 4, 2021/11/12, 20:30:37.576, 123185238253, testhost.dll, Sending test run complete
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.604, 123185525060, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":0,"Stats":{}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:00.2214259","Metrics":{}},"LastRunTests":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":0,"Stats":{}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":[]}}
+TpTrace Verbose: 0 : 17840, 4, 2021/11/12, 20:30:37.605, 123185529909, testhost.dll, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.605, 123185532973, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.605, 123185534965, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.606, 123185535547, testhost.dll, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.606, 123185540429, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:065224
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.606, 123185540954, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.606, 123185542552, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.606, 123185543108, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 17840, 5, 2021/11/12, 20:30:37.607, 123185545492, testhost.dll, SocketClient.PrivateStop: Stop communication from server endpoint: 127.0.0.1:065224, error:
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:37.607, 123185548669, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:37.607, 123185549434, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:065224
+TpTrace Verbose: 0 : 17840, 1, 2021/11/12, 20:30:37.607, 123185549973, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.607, 123185548901, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 17840, 5, 2021/11/12, 20:30:37.607, 123185551129, testhost.dll, TcpClientExtensions.MessageLoopAsync: exiting MessageLoopAsync remoteEndPoint: [::ffff:127.0.0.1]:65224 localEndPoint: [::ffff:127.0.0.1]:65226
+TpTrace Information: 0 : 17840, 1, 2021/11/12, 20:30:37.607, 123185551189, testhost.dll, Testhost process exiting.

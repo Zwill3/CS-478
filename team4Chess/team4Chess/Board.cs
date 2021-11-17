@@ -88,21 +88,38 @@ namespace ChessBoardModel2
         {
             List<int[]> legalMoves = new List<int[]>();
             bool[,] currentBoard = new bool[8, 8];
-            for (int i=0; i<8; i++)
+            bool[,] colorBoard = new bool[8, 8];
+
+            if (TheGrid[x, y].isWhite)
             {
-                for (int j=0; j<8; j++)
+                for (int i = 0; i < 8; i++)
                 {
-                    currentBoard[i, j] = TheGrid[i, j].CurrentlyOccupied;
+                    for (int j = 0; j < 8; j++)
+                    {
+                        currentBoard[i, j] = TheGrid[i, j].CurrentlyOccupied;
+                        colorBoard[i, j] = TheGrid[i, j].isBlack;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        currentBoard[i, j] = TheGrid[i, j].CurrentlyOccupied;
+                        colorBoard[i, j] = TheGrid[i, j].isWhite;
+                    }
                 }
             }
 
             if (TheGrid[x, y].isPawn)
             {
-                return pieceManager.PawnMoves(currentBoard, x, y, TheGrid[x, y].isWhite);
+                return pieceManager.PawnMoves(currentBoard, colorBoard, x, y, TheGrid[x, y].isWhite);
             }
             else if (TheGrid[x, y].isKnight)
             {
-                return pieceManager.KnightMoves(currentBoard, x, y);
+                return pieceManager.KnightMoves(currentBoard, colorBoard, x, y);
             }
             else if (TheGrid[x, y].isBishop)
             {
