@@ -14,3 +14,21 @@ C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.pdb
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.genruntimeconfig.cache
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csprojAssemblyReference.cache
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.exe
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.deps.json
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.runtimeconfig.json
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.runtimeconfig.dev.json
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.dll
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.pdb
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.AssemblyReference.cache
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Form1.resources
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Properties.Resources.resources
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.GenerateResource.cache
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfoInputs.cache
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfo.cs
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.CoreCompileInputs.cache
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.dll
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.pdb
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.genruntimeconfig.cache
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.UserInterface.resources

@@ -32,6 +32,11 @@ namespace team4Chess
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Full screen
+            int width = Screen.PrimaryScreen.Bounds.Width;
+            int height = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(width, height);
             //Upon loading we need to have a chessboard to handle the back end of things and some additional form variables
             //for displaying the chess game properly.
             //0,0 = A8 making the top left corner of the board our start of the 2D array
