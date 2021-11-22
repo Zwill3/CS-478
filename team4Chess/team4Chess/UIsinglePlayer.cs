@@ -8,12 +8,21 @@ using System.Windows.Forms;
 
 namespace team4Chess
 {
-    public partial class UserInterface : Form
+    public partial class UIsinglePlayer : Form
     {
-        public UserInterface()
+        public UIsinglePlayer()
         {
             InitializeComponent();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UIsinglePlayer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

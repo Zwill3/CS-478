@@ -8,24 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\echos\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Zwill\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Chess_Repository\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
+      "projectUniqueName": "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
       "projectName": "team4Chess",
-      "projectPath": "E:\\Chess_Repository\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
-      "packagesPath": "C:\\Users\\echos\\.nuget\\packages\\",
-      "outputPath": "E:\\Chess_Repository\\CS-478\\team4Chess\\team4Chess\\obj\\",
+      "projectPath": "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
+      "packagesPath": "C:\\Users\\Zwill\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\echos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Zwill\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -68,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
