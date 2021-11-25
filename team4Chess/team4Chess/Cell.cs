@@ -22,6 +22,10 @@ namespace ChessBoardModel2
         public bool isWhite { get; set; }
         public bool isBlack { get; set; }
 
+        //These last two variables are to be used as checks for the specific movements of en passent and castling
+        public bool castleAble { get; set; }
+        public bool passantAble { get; set; }
+
         public Cell(int x, int y)
         {
             RowNumber = x;
