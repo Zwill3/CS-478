@@ -15,5 +15,19 @@ namespace team4Chess
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UIsinglePlayer secondPage = new UIsinglePlayer();
+            secondPage.ShowDialog();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 multiGame = new Form1();
+            multiGame.ShowDialog();
+        }
     }
 }

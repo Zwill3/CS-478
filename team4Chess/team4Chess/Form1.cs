@@ -149,5 +149,12 @@ namespace team4Chess
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserInterface menuReset = new UserInterface();
+            menuReset.ShowDialog();
+        }
     }
 }

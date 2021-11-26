@@ -17,12 +17,37 @@ namespace team4Chess
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form1 hardLoad = new Form1();
+            hardLoad.ShowDialog();
         }
 
-        private void UIsinglePlayer_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form1 easyLoad = new Form1();
+            easyLoad.ShowDialog();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 mediumLoad = new Form1();
+            mediumLoad.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 engineLoad = new Form1();
+            engineLoad.ShowDialog();            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserInterface goBack = new UserInterface();
+            goBack.ShowDialog();
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {}
+    "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {
+    "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
+        "projectUniqueName": "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
         "projectName": "team4Chess",
-        "projectPath": "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
-        "packagesPath": "C:\\Users\\Zwill\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zwill\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\obj\\",
+        "projectPath": "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
+        "packagesPath": "C:\\Users\\zatch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Zwill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zatch\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
