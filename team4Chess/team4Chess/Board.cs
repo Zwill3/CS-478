@@ -96,6 +96,14 @@ namespace ChessBoardModel2
             List<int[]> legalMoves = new List<int[]>();
             bool[,] currentBoard = new bool[8, 8];
             bool[,] colorBoard = new bool[8, 8];
+            //In order to make sure a move doesn't place the king in check, all pieces must be known to see if they can attack
+            //the king's coordinate
+            bool[,] pawnBoard = new bool[8, 8];
+            bool[,] knightBoard = new bool[8, 8];
+            bool[,] bishopBoard = new bool[8, 8];
+            bool[,] rookBoard = new bool[8, 8];
+            bool[,] queenBoard = new bool[8, 8];
+            bool[,] kingBoard = new bool[8, 8];
 
             if (TheGrid[x, y].isWhite)
             {
@@ -105,6 +113,12 @@ namespace ChessBoardModel2
                     {
                         currentBoard[i, j] = TheGrid[i, j].CurrentlyOccupied;
                         colorBoard[i, j] = TheGrid[i, j].isBlack;
+                        pawnBoard[i, j] = TheGrid[i, j].isPawn;
+                        knightBoard[i, j] = TheGrid[i, j].isKnight;
+                        bishopBoard[i, j] = TheGrid[i, j].isBishop;
+                        rookBoard[i, j] = TheGrid[i, j].isRook;
+                        queenBoard[i, j] = TheGrid[i, j].isQueen;
+                        kingBoard[i, j] = TheGrid[i, j].isKing;
                     }
                 }
             }
@@ -116,47 +130,6 @@ namespace ChessBoardModel2
                     {
                         currentBoard[i, j] = TheGrid[i, j].CurrentlyOccupied;
                         colorBoard[i, j] = TheGrid[i, j].isWhite;
-                    }
-                }
-            }
-
-            currentBoard[x, y] = false;
-
-            if (TheGrid[x, y].isPawn)
-            {
-                return pieceManager.PawnMoves(currentBoard, colorBoard, x, y, TheGrid[x, y].isWhite);
-            }
-            else if (TheGrid[x, y].isKnight)
-            {
-                return pieceManager.KnightMoves(currentBoard, colorBoard, x, y);
-            }
-            else if (TheGrid[x, y].isBishop)
-            {
-                return pieceManager.BishopMoves(currentBoard, colorBoard, x, y);
-            }
-            else if (TheGrid[x, y].isRook)
-            {
-                return pieceManager.RookMoves(currentBoard, colorBoard, x, y);
-            }
-            else if (TheGrid[x, y].isQueen)
-            {
-                return pieceManager.QueenMoves(currentBoard, colorBoard, x, y);
-            }
-            else if (TheGrid[x,y].isKing)
-            {
-                //The king has to make sure it cannot move into check and as such all the pieces must be know and there specific type to check
-                //whether a specific square is in check;
-                bool[,] pawnBoard =  new bool[8,8];
-                bool[,] knightBoard = new bool[8,8];
-                bool[,] bishopBoard = new bool[8,8];
-                bool[,] rookBoard = new bool[8,8];
-                bool[,] queenBoard = new bool[8,8];
-                bool[,] kingBoard = new bool [8,8];
-                
-                for(int i=0; i<8; i++)
-                {
-                    for(int j =0; j<8; j++)
-                    {
                         pawnBoard[i, j] = TheGrid[i, j].isPawn;
                         knightBoard[i, j] = TheGrid[i, j].isKnight;
                         bishopBoard[i, j] = TheGrid[i, j].isBishop;
@@ -165,6 +138,33 @@ namespace ChessBoardModel2
                         kingBoard[i, j] = TheGrid[i, j].isKing;
                     }
                 }
+            }
+
+            currentBoard[x, y] = false;
+
+            if (TheGrid[x, y].isPawn)
+            {
+                return pieceManager.PawnMoves(currentBoard, colorBoard, pawnBoard, knightBoard, bishopBoard, rookBoard, queenBoard, kingBoard, x, y, TheGrid[x, y].isWhite);
+            }
+            else if (TheGrid[x, y].isKnight)
+            {
+                return pieceManager.KnightMoves(currentBoard, colorBoard, pawnBoard, knightBoard, bishopBoard, rookBoard, queenBoard, kingBoard, x, y);
+            }
+            else if (TheGrid[x, y].isBishop)
+            {
+                return pieceManager.BishopMoves(currentBoard, colorBoard, pawnBoard, knightBoard, bishopBoard, rookBoard, queenBoard, kingBoard, x, y);
+            }
+            else if (TheGrid[x, y].isRook)
+            {
+                return pieceManager.RookMoves(currentBoard, colorBoard, pawnBoard, knightBoard, bishopBoard, rookBoard, queenBoard, kingBoard, x, y);
+            }
+            else if (TheGrid[x, y].isQueen)
+            {
+                return pieceManager.QueenMoves(currentBoard, colorBoard, pawnBoard, knightBoard, bishopBoard, rookBoard, queenBoard, kingBoard, x, y);
+            }
+            else if (TheGrid[x,y].isKing)
+            {
+                //The King can castle if it and the rook it is castling with haven't moved
                 bool[] castleStates = new bool[3];
                 if (TheGrid[x, y].isWhite)
                 {
@@ -179,20 +179,6 @@ namespace ChessBoardModel2
             }
 
             return legalMoves;
-        }
-
-        public bool[,] TestBoard()
-        {
-            bool[,] currentBoard = new bool[8, 8];
-            for (int i = 0; i < 8; i++)
-            {
-                for (int j = 0; j < 8; j++)
-                {
-                    currentBoard[i, j] = TheGrid[i, j].CurrentlyOccupied;
-                }
-            }
-
-            return currentBoard;
         }
 
         //The CompleteMove method updates the board with a users move.

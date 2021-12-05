@@ -18,7 +18,7 @@ namespace ChessBoardModel2
         }
 
         //Highlight all possible pawn moves
-        public List<int[]> PawnMoves(bool[,] currentBoard, bool[,] oppColors, int x, int y, bool whitePiece)
+        public List<int[]> PawnMoves(bool[,] currentBoard, bool[,] oppColors, bool[,] pawns, bool[,] knights, bool[,] bishops, bool[,] rooks, bool[,] queens, bool[,] kings, int x, int y, bool whitePiece)
         {
             List < int[] > possibleMoves = new List<int[]>();
             int[] tempRay;
@@ -99,7 +99,7 @@ namespace ChessBoardModel2
         }
 
         //Highlight all possible knight moves.
-        public List<int[]> KnightMoves(bool[,] currentBoard, bool[,] oppColors, int x, int y)
+        public List<int[]> KnightMoves(bool[,] currentBoard, bool[,] oppColors, bool[,] pawns, bool[,] knights, bool[,] bishops, bool[,] rooks, bool[,] queens, bool[,] kings, int x, int y)
         {
             List<int[]> possibleMoves = new List<int[]>();
             int[] tempRay;
@@ -245,7 +245,7 @@ namespace ChessBoardModel2
         }
 
         //Highlight all possible Bishop moves
-        public List<int[]> BishopMoves(bool[,] currentBoard, bool[,] oppColor, int x, int y)
+        public List<int[]> BishopMoves(bool[,] currentBoard, bool[,] oppColor, bool[,] pawns, bool[,] knights, bool[,] bishops, bool[,] rooks, bool[,] queens, bool[,] kings, int x, int y)
         {
             List<int[]> possibleMoves = new List<int[]>();
             int[] tempRay;
@@ -253,69 +253,76 @@ namespace ChessBoardModel2
             possibleMoves.Add(tempRay);
             int tempX = x;
             int tempY = y;
-            while (tempX > 0 && tempY > 0 && !currentBoard[tempX, tempY])
-            {    
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempX--;
-                tempY--;
-            }
-            if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+            if (!isPinnedTRBL(currentBoard, oppColor, bishops, queens, kings, x, y) && !isPinnedHorizontal(currentBoard, oppColor, rooks, queens, kings, x, y) && !isPinnedVertical(currentBoard, oppColor, rooks, queens, kings, x, y))
             {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
+                while (tempX > 0 && tempY > 0 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempX--;
+                    tempY--;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
+
+                tempX = x;
+                tempY = y;
+                while (tempX < 7 && tempY < 7 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempX++;
+                    tempY++;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
+
+                tempX = x;
+                tempY = y;
             }
 
-            tempX = x;
-            tempY = y;
-            while (tempX < 7 && tempY > 0 && !currentBoard[tempX,tempY])
+            if (!isPinnedTLBR(currentBoard, oppColor, bishops, queens, kings, x, y) && !isPinnedHorizontal(currentBoard, oppColor, rooks, queens, kings, x, y) && !isPinnedVertical(currentBoard, oppColor, rooks, queens, kings, x, y))
             {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempX++;
-                tempY--;
-            }
-            if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-            }
+                while (tempX < 7 && tempY > 0 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempX++;
+                    tempY--;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
 
-            tempX = x;
-            tempY = y;
-            while (tempX < 7 && tempY < 7 && !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempX++;
-                tempY++;
-            }
-            if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-            }
-
-            tempX = x;
-            tempY = y;
-            while (tempX > 0 && tempY < 7 && !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempX--;
-                tempY++;
-            }
-            if(oppColor[tempX,tempY] || !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
+                tempX = x;
+                tempY = y;
+                while (tempX > 0 && tempY < 7 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempX--;
+                    tempY++;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
             }
 
             return possibleMoves;
         }
 
         //Highlight all possible Rook moves
-        public List<int[]> RookMoves(bool[,] currentBoard, bool[,] oppColor, int x, int y)
+        public List<int[]> RookMoves(bool[,] currentBoard, bool[,] oppColor, bool[,] pawns, bool[,] knights, bool[,] bishops, bool[,] rooks, bool[,] queens, bool[,] kings, int x, int y)
         {
             List<int[]> possibleMoves = new List<int[]>();
             int[] tempRay;
@@ -324,68 +331,75 @@ namespace ChessBoardModel2
             int tempX = x;
             int tempY = y;
 
-            while (tempX > 0 && !currentBoard[tempX, tempY])
+            if (!isPinnedVertical(currentBoard,oppColor,rooks,queens,kings,x,y) && !isPinnedTLBR(currentBoard, oppColor, bishops, queens, kings, x, y) && !isPinnedTRBL(currentBoard, oppColor, bishops, queens, kings, x, y))
             {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempX--;
-            }
-            if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
+                while (tempX > 0 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempX--;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
+
+                tempX = x;
+                while (tempX < 7 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempX++;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
+
+                tempX = x;
             }
 
-            tempX = x;
-            while (tempX < 7 && !currentBoard[tempX, tempY])
+            if (!isPinnedHorizontal(currentBoard,oppColor,rooks,queens,kings,x,y) && !isPinnedTLBR(currentBoard,oppColor,bishops,queens,kings,x,y) && !isPinnedTRBL(currentBoard,oppColor,bishops,queens,kings,x,y))
             {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempX++;
-            }
-            if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-            }
+                while (tempY > 0 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempY--;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
 
-            tempX = x;
-            while (tempY > 0 && !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempY--;
-            }
-            if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-            }
-
-            tempY = y;
-            while (tempY < 7 && !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
-                tempY++;
-            }
-            if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
-            {
-                tempRay = new int[2] { tempX, tempY };
-                possibleMoves.Add(tempRay);
+                tempY = y;
+                while (tempY < 7 && !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                    tempY++;
+                }
+                if (oppColor[tempX, tempY] || !currentBoard[tempX, tempY])
+                {
+                    tempRay = new int[2] { tempX, tempY };
+                    possibleMoves.Add(tempRay);
+                }
             }
 
             return possibleMoves;
         }
 
         //Highlight all possible Queen moves
-        public List<int[]> QueenMoves(bool[,] currentBoard, bool[,] oppColor, int x, int y)
+        public List<int[]> QueenMoves(bool[,] currentBoard, bool[,] oppColor, bool[,] pawns, bool[,] knights, bool[,] bishops, bool[,] rooks, bool[,] queens, bool[,] kings, int x, int y)
         {
             List<int[]> possibleMoves = new List<int[]>();
             //Because the queen is just diagonal and straight lines which has already been covered in the bishop and rook methods,
             //combining the outputs of the two gives all the queen's moves.
-            List<int[]> diagonalMoves = BishopMoves(currentBoard, oppColor, x, y);
-            List<int[]> straightMoves = RookMoves(currentBoard, oppColor, x, y);
+            List<int[]> diagonalMoves = BishopMoves(currentBoard, oppColor, pawns, knights, bishops, rooks, queens, kings, x, y);
+            List<int[]> straightMoves = RookMoves(currentBoard, oppColor, pawns, knights, bishops, rooks, queens, kings, x, y);
             foreach(int[] viableSpace in diagonalMoves)
             {
                 possibleMoves.Add(viableSpace);
@@ -767,6 +781,163 @@ namespace ChessBoardModel2
             }
 
             return false;
+        }
+
+        //The isPinned set of methods is used to make sure a piece cannot move in or out of check.  Pinned means a piece is in a position where moving would
+        //put the king in check, and illegal move.  To determine if a piece is pinned we check along both sides of a direction of travel to see if there is
+        //an attacking piece on one side, and the king on the other.
+        public bool isPinnedVertical(bool[,] currentBoard, bool[,] oppColor, bool[,] rooks, bool[,] queens, bool[,] kings, int x, int y)
+        {
+            bool foundKing = new bool();
+            bool foundAttacker = new bool();
+            int tempX, tempY = new int();
+            tempX = x;
+            tempY = y;
+            while(tempY > 0 && !currentBoard[tempX, tempY])
+            {
+                tempY--;
+            }
+            if((rooks[tempX,tempY] && oppColor[tempX, tempY]) || (queens[tempX,tempY] && oppColor[tempX,tempY]))
+            {
+                foundAttacker = true;
+            }
+            if(kings[tempX,tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+
+            tempY = y;
+            while(tempY<7 && !currentBoard[tempX, tempY])
+            {
+                tempY++;
+            }
+            if ((rooks[tempX, tempY] && oppColor[tempX, tempY]) || (queens[tempX, tempY] && oppColor[tempX, tempY]))
+            {
+                foundAttacker = true;
+            }
+            if (kings[tempX, tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+
+            return (foundAttacker && foundKing);
+        }
+
+        public bool isPinnedHorizontal(bool[,] currentBoard, bool[,] oppColor, bool[,] rooks, bool[,] queens, bool[,] kings, int x, int y)
+        {
+            bool foundKing = new bool();
+            bool foundAttacker = new bool();
+            int tempX, tempY = new int();
+            tempX = x;
+            tempY = y;
+            while (tempX > 0 && !currentBoard[tempX, tempY])
+            {
+                tempX--;
+            }
+            if ((rooks[tempX, tempY] && oppColor[tempX, tempY]) || (queens[tempX, tempY] && oppColor[tempX, tempY]))
+            {
+                foundAttacker = true;
+            }
+            if (kings[tempX, tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+            
+            tempX = x;
+            while (tempX < 7 && !currentBoard[tempX, tempY])
+            {
+                tempX++;
+            }
+            if ((rooks[tempX, tempY] && oppColor[tempX, tempY]) || (queens[tempX, tempY] && oppColor[tempX, tempY]))
+            {
+                foundAttacker = true;
+            }
+            if (kings[tempX, tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+
+            return (foundAttacker && foundKing);
+        }
+
+        public bool isPinnedTLBR(bool[,] currentBoard, bool[,] oppColor, bool[,] bishops, bool[,] queens, bool[,] kings, int x, int y)
+        {
+            bool foundKing = new bool();
+            bool foundAttacker = new bool();
+            int tempX, tempY = new int();
+            tempX = x;
+            tempY = y;
+            while(tempX>0 && tempY>0 && !currentBoard[tempX, tempY])
+            {
+                tempX--;
+                tempY--;
+            }
+            if ((bishops[tempX, tempY] && oppColor[tempX, tempY]) || (queens[tempX, tempY] && oppColor[tempX, tempY]))
+            {
+                foundAttacker = true;
+            }
+            if (kings[tempX, tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+
+            tempX = x;
+            tempY = y;
+            while(tempX<7 && tempY<7 && !currentBoard[tempX, tempY])
+            {
+                tempX++;
+                tempY++;
+            }
+            if ((bishops[tempX, tempY] && oppColor[tempX, tempY]) || (queens[tempX, tempY] && oppColor[tempX, tempY]))
+            {
+                foundAttacker = true;
+            }
+            if (kings[tempX, tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+
+            return (foundAttacker && foundKing);
+        }
+
+        public bool isPinnedTRBL(bool[,] currentBoard, bool[,] oppColor, bool[,] bishops, bool[,] queens, bool[,] kings, int x, int y)
+        {
+            bool foundKing = new bool();
+            bool foundAttacker = new bool();
+            int tempX, tempY = new int();
+            tempX = x;
+            tempY = y;
+            while (tempX > 0 && tempY < 7 && !currentBoard[tempX, tempY])
+            {
+                tempX--;
+                tempY++;
+            }
+            if ((bishops[tempX, tempY] && oppColor[tempX, tempY]) || (queens[tempX, tempY] && oppColor[tempX, tempY]))
+            {
+                foundAttacker = true;
+            }
+            if (kings[tempX, tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+
+            tempX = x;
+            tempY = y;
+            while (tempX < 7 && tempY > 0 && !currentBoard[tempX, tempY])
+            {
+                tempX++;
+                tempY--;
+            }
+            if ((bishops[tempX, tempY] && oppColor[tempX, tempY]) || (queens[tempX, tempY] && oppColor[tempX, tempY]))
+            {
+                foundAttacker = true;
+            }
+            if (kings[tempX, tempY] && !oppColor[tempX, tempY])
+            {
+                foundKing = true;
+            }
+
+            return (foundAttacker && foundKing);
         }
     }
 }

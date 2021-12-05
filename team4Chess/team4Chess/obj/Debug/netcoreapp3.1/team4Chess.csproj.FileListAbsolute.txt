@@ -1,19 +1,3 @@
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.exe
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.deps.json
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.runtimeconfig.json
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.runtimeconfig.dev.json
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.dll
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.pdb
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Form1.resources
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Properties.Resources.resources
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.GenerateResource.cache
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfoInputs.cache
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfo.cs
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.CoreCompileInputs.cache
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.dll
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.pdb
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.genruntimeconfig.cache
-C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csprojAssemblyReference.cache
 E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.exe
 E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.deps.json
 E:\Chess_Repository\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.runtimeconfig.json
@@ -68,3 +52,21 @@ C:\Users\zatch\OneDrive - University of Southern Indiana\Documents\GitHub\CS-478
 C:\Users\zatch\OneDrive - University of Southern Indiana\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.dll
 C:\Users\zatch\OneDrive - University of Southern Indiana\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.pdb
 C:\Users\zatch\OneDrive - University of Southern Indiana\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.genruntimeconfig.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.exe
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.deps.json
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.runtimeconfig.json
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.runtimeconfig.dev.json
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.dll
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\bin\Debug\netcoreapp3.1\team4Chess.pdb
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Form1.resources
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.Properties.Resources.resources
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.UIsinglePlayer.resources
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.UserInterface.resources
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.GenerateResource.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfoInputs.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.AssemblyInfo.cs
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.dll
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.pdb
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.genruntimeconfig.cache
+C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csprojAssemblyReference.cache

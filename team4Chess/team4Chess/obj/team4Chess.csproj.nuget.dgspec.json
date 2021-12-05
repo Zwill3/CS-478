@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {}
+    "C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {
+    "C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
         "projectName": "team4Chess",
-        "projectPath": "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
-        "packagesPath": "C:\\Users\\zatch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zatch\\OneDrive - University of Southern Indiana\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\obj\\",
+        "projectPath": "C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\team4Chess.csproj",
+        "packagesPath": "C:\\Users\\Lucas Zoglmann\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas Zoglmann\\Documents\\GitHub\\CS-478\\team4Chess\\team4Chess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zatch\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lucas Zoglmann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -57,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
