@@ -94,15 +94,32 @@ namespace team4Chess
             this.B7 = new System.Windows.Forms.Button();
             this.A7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mainMenuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.returnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // A8
             // 
             this.A8.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.A8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A8.Location = new System.Drawing.Point(13, 13);
+            this.A8.Location = new System.Drawing.Point(9, 41);
+            this.A8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A8.Name = "A8";
-            this.A8.Size = new System.Drawing.Size(120, 120);
+            this.A8.Size = new System.Drawing.Size(137, 76);
             this.A8.TabIndex = 0;
             this.A8.UseVisualStyleBackColor = true;
             // 
@@ -110,9 +127,10 @@ namespace team4Chess
             // 
             this.G8.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.G8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G8.Location = new System.Drawing.Point(733, 13);
+            this.G8.Location = new System.Drawing.Point(832, 41);
+            this.G8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G8.Name = "G8";
-            this.G8.Size = new System.Drawing.Size(120, 120);
+            this.G8.Size = new System.Drawing.Size(137, 76);
             this.G8.TabIndex = 1;
             this.G8.UseVisualStyleBackColor = true;
             // 
@@ -120,9 +138,10 @@ namespace team4Chess
             // 
             this.F8.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.F8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F8.Location = new System.Drawing.Point(613, 13);
+            this.F8.Location = new System.Drawing.Point(695, 41);
+            this.F8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F8.Name = "F8";
-            this.F8.Size = new System.Drawing.Size(120, 120);
+            this.F8.Size = new System.Drawing.Size(137, 76);
             this.F8.TabIndex = 2;
             this.F8.UseVisualStyleBackColor = true;
             // 
@@ -130,9 +149,10 @@ namespace team4Chess
             // 
             this.E8.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.E8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E8.Location = new System.Drawing.Point(493, 13);
+            this.E8.Location = new System.Drawing.Point(557, 41);
+            this.E8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E8.Name = "E8";
-            this.E8.Size = new System.Drawing.Size(120, 120);
+            this.E8.Size = new System.Drawing.Size(137, 76);
             this.E8.TabIndex = 3;
             this.E8.UseVisualStyleBackColor = true;
             // 
@@ -140,9 +160,10 @@ namespace team4Chess
             // 
             this.D8.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.D8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D8.Location = new System.Drawing.Point(373, 13);
+            this.D8.Location = new System.Drawing.Point(420, 41);
+            this.D8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D8.Name = "D8";
-            this.D8.Size = new System.Drawing.Size(120, 120);
+            this.D8.Size = new System.Drawing.Size(137, 76);
             this.D8.TabIndex = 4;
             this.D8.UseVisualStyleBackColor = true;
             // 
@@ -150,9 +171,10 @@ namespace team4Chess
             // 
             this.C8.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.C8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C8.Location = new System.Drawing.Point(253, 13);
+            this.C8.Location = new System.Drawing.Point(283, 41);
+            this.C8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C8.Name = "C8";
-            this.C8.Size = new System.Drawing.Size(120, 120);
+            this.C8.Size = new System.Drawing.Size(137, 76);
             this.C8.TabIndex = 5;
             this.C8.UseVisualStyleBackColor = true;
             // 
@@ -160,9 +182,10 @@ namespace team4Chess
             // 
             this.B8.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.B8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B8.Location = new System.Drawing.Point(133, 13);
+            this.B8.Location = new System.Drawing.Point(146, 41);
+            this.B8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B8.Name = "B8";
-            this.B8.Size = new System.Drawing.Size(120, 120);
+            this.B8.Size = new System.Drawing.Size(137, 76);
             this.B8.TabIndex = 6;
             this.B8.UseVisualStyleBackColor = true;
             // 
@@ -170,9 +193,10 @@ namespace team4Chess
             // 
             this.H8.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.H8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H8.Location = new System.Drawing.Point(853, 13);
+            this.H8.Location = new System.Drawing.Point(969, 41);
+            this.H8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H8.Name = "H8";
-            this.H8.Size = new System.Drawing.Size(120, 120);
+            this.H8.Size = new System.Drawing.Size(137, 76);
             this.H8.TabIndex = 7;
             this.H8.UseVisualStyleBackColor = true;
             // 
@@ -180,9 +204,10 @@ namespace team4Chess
             // 
             this.H6.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.H6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H6.Location = new System.Drawing.Point(853, 253);
+            this.H6.Location = new System.Drawing.Point(969, 185);
+            this.H6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H6.Name = "H6";
-            this.H6.Size = new System.Drawing.Size(120, 120);
+            this.H6.Size = new System.Drawing.Size(137, 76);
             this.H6.TabIndex = 8;
             this.H6.UseVisualStyleBackColor = true;
             // 
@@ -190,9 +215,10 @@ namespace team4Chess
             // 
             this.A5.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.A5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A5.Location = new System.Drawing.Point(13, 373);
+            this.A5.Location = new System.Drawing.Point(9, 260);
+            this.A5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A5.Name = "A5";
-            this.A5.Size = new System.Drawing.Size(120, 120);
+            this.A5.Size = new System.Drawing.Size(137, 76);
             this.A5.TabIndex = 9;
             this.A5.UseVisualStyleBackColor = true;
             // 
@@ -200,9 +226,10 @@ namespace team4Chess
             // 
             this.B5.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.B5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B5.Location = new System.Drawing.Point(133, 373);
+            this.B5.Location = new System.Drawing.Point(146, 260);
+            this.B5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B5.Name = "B5";
-            this.B5.Size = new System.Drawing.Size(120, 120);
+            this.B5.Size = new System.Drawing.Size(137, 76);
             this.B5.TabIndex = 10;
             this.B5.UseVisualStyleBackColor = true;
             // 
@@ -210,9 +237,10 @@ namespace team4Chess
             // 
             this.C5.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.C5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C5.Location = new System.Drawing.Point(253, 373);
+            this.C5.Location = new System.Drawing.Point(283, 260);
+            this.C5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C5.Name = "C5";
-            this.C5.Size = new System.Drawing.Size(120, 120);
+            this.C5.Size = new System.Drawing.Size(137, 76);
             this.C5.TabIndex = 11;
             this.C5.UseVisualStyleBackColor = true;
             // 
@@ -220,9 +248,10 @@ namespace team4Chess
             // 
             this.D5.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.D5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D5.Location = new System.Drawing.Point(373, 373);
+            this.D5.Location = new System.Drawing.Point(420, 260);
+            this.D5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D5.Name = "D5";
-            this.D5.Size = new System.Drawing.Size(120, 120);
+            this.D5.Size = new System.Drawing.Size(137, 76);
             this.D5.TabIndex = 12;
             this.D5.UseVisualStyleBackColor = true;
             // 
@@ -230,9 +259,10 @@ namespace team4Chess
             // 
             this.E5.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.E5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E5.Location = new System.Drawing.Point(493, 373);
+            this.E5.Location = new System.Drawing.Point(557, 260);
+            this.E5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E5.Name = "E5";
-            this.E5.Size = new System.Drawing.Size(120, 120);
+            this.E5.Size = new System.Drawing.Size(137, 76);
             this.E5.TabIndex = 13;
             this.E5.UseVisualStyleBackColor = true;
             // 
@@ -240,9 +270,10 @@ namespace team4Chess
             // 
             this.F5.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.F5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F5.Location = new System.Drawing.Point(613, 373);
+            this.F5.Location = new System.Drawing.Point(695, 260);
+            this.F5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F5.Name = "F5";
-            this.F5.Size = new System.Drawing.Size(120, 120);
+            this.F5.Size = new System.Drawing.Size(137, 76);
             this.F5.TabIndex = 14;
             this.F5.UseVisualStyleBackColor = true;
             // 
@@ -250,9 +281,10 @@ namespace team4Chess
             // 
             this.G5.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.G5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G5.Location = new System.Drawing.Point(733, 373);
+            this.G5.Location = new System.Drawing.Point(832, 260);
+            this.G5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G5.Name = "G5";
-            this.G5.Size = new System.Drawing.Size(120, 120);
+            this.G5.Size = new System.Drawing.Size(137, 76);
             this.G5.TabIndex = 15;
             this.G5.UseVisualStyleBackColor = true;
             // 
@@ -260,9 +292,10 @@ namespace team4Chess
             // 
             this.H5.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.H5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H5.Location = new System.Drawing.Point(853, 373);
+            this.H5.Location = new System.Drawing.Point(969, 260);
+            this.H5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H5.Name = "H5";
-            this.H5.Size = new System.Drawing.Size(120, 120);
+            this.H5.Size = new System.Drawing.Size(137, 76);
             this.H5.TabIndex = 16;
             this.H5.UseVisualStyleBackColor = true;
             // 
@@ -270,9 +303,10 @@ namespace team4Chess
             // 
             this.A4.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.A4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A4.Location = new System.Drawing.Point(13, 493);
+            this.A4.Location = new System.Drawing.Point(9, 334);
+            this.A4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A4.Name = "A4";
-            this.A4.Size = new System.Drawing.Size(120, 120);
+            this.A4.Size = new System.Drawing.Size(137, 83);
             this.A4.TabIndex = 17;
             this.A4.UseVisualStyleBackColor = true;
             // 
@@ -280,9 +314,10 @@ namespace team4Chess
             // 
             this.A3.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.A3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A3.Location = new System.Drawing.Point(13, 613);
+            this.A3.Location = new System.Drawing.Point(9, 416);
+            this.A3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A3.Name = "A3";
-            this.A3.Size = new System.Drawing.Size(120, 120);
+            this.A3.Size = new System.Drawing.Size(137, 83);
             this.A3.TabIndex = 18;
             this.A3.UseVisualStyleBackColor = true;
             // 
@@ -290,9 +325,10 @@ namespace team4Chess
             // 
             this.A2.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.A2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A2.Location = new System.Drawing.Point(13, 733);
+            this.A2.Location = new System.Drawing.Point(9, 495);
+            this.A2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A2.Name = "A2";
-            this.A2.Size = new System.Drawing.Size(120, 120);
+            this.A2.Size = new System.Drawing.Size(137, 83);
             this.A2.TabIndex = 19;
             this.A2.UseVisualStyleBackColor = true;
             // 
@@ -300,9 +336,10 @@ namespace team4Chess
             // 
             this.A1.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.A1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A1.Location = new System.Drawing.Point(13, 853);
+            this.A1.Location = new System.Drawing.Point(9, 575);
+            this.A1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A1.Name = "A1";
-            this.A1.Size = new System.Drawing.Size(120, 120);
+            this.A1.Size = new System.Drawing.Size(137, 83);
             this.A1.TabIndex = 20;
             this.A1.UseVisualStyleBackColor = true;
             // 
@@ -310,9 +347,10 @@ namespace team4Chess
             // 
             this.B4.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.B4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B4.Location = new System.Drawing.Point(133, 493);
+            this.B4.Location = new System.Drawing.Point(146, 334);
+            this.B4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B4.Name = "B4";
-            this.B4.Size = new System.Drawing.Size(120, 120);
+            this.B4.Size = new System.Drawing.Size(137, 83);
             this.B4.TabIndex = 21;
             this.B4.UseVisualStyleBackColor = true;
             // 
@@ -320,9 +358,10 @@ namespace team4Chess
             // 
             this.B3.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.B3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B3.Location = new System.Drawing.Point(133, 613);
+            this.B3.Location = new System.Drawing.Point(146, 416);
+            this.B3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B3.Name = "B3";
-            this.B3.Size = new System.Drawing.Size(120, 120);
+            this.B3.Size = new System.Drawing.Size(137, 83);
             this.B3.TabIndex = 22;
             this.B3.UseVisualStyleBackColor = true;
             // 
@@ -330,9 +369,10 @@ namespace team4Chess
             // 
             this.B2.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.B2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B2.Location = new System.Drawing.Point(133, 733);
+            this.B2.Location = new System.Drawing.Point(146, 495);
+            this.B2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B2.Name = "B2";
-            this.B2.Size = new System.Drawing.Size(120, 120);
+            this.B2.Size = new System.Drawing.Size(137, 83);
             this.B2.TabIndex = 23;
             this.B2.UseVisualStyleBackColor = true;
             // 
@@ -340,9 +380,10 @@ namespace team4Chess
             // 
             this.B1.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.B1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B1.Location = new System.Drawing.Point(133, 853);
+            this.B1.Location = new System.Drawing.Point(146, 575);
+            this.B1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B1.Name = "B1";
-            this.B1.Size = new System.Drawing.Size(120, 120);
+            this.B1.Size = new System.Drawing.Size(137, 83);
             this.B1.TabIndex = 24;
             this.B1.UseVisualStyleBackColor = true;
             // 
@@ -350,9 +391,10 @@ namespace team4Chess
             // 
             this.C4.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C4.Location = new System.Drawing.Point(253, 493);
+            this.C4.Location = new System.Drawing.Point(283, 334);
+            this.C4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C4.Name = "C4";
-            this.C4.Size = new System.Drawing.Size(120, 120);
+            this.C4.Size = new System.Drawing.Size(137, 83);
             this.C4.TabIndex = 25;
             this.C4.UseVisualStyleBackColor = true;
             // 
@@ -360,9 +402,10 @@ namespace team4Chess
             // 
             this.C3.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C3.Location = new System.Drawing.Point(253, 613);
+            this.C3.Location = new System.Drawing.Point(283, 416);
+            this.C3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(120, 120);
+            this.C3.Size = new System.Drawing.Size(137, 83);
             this.C3.TabIndex = 26;
             this.C3.UseVisualStyleBackColor = true;
             // 
@@ -370,9 +413,10 @@ namespace team4Chess
             // 
             this.D3.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.D3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D3.Location = new System.Drawing.Point(373, 613);
+            this.D3.Location = new System.Drawing.Point(420, 416);
+            this.D3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D3.Name = "D3";
-            this.D3.Size = new System.Drawing.Size(120, 120);
+            this.D3.Size = new System.Drawing.Size(137, 83);
             this.D3.TabIndex = 27;
             this.D3.UseVisualStyleBackColor = true;
             // 
@@ -380,9 +424,10 @@ namespace team4Chess
             // 
             this.D2.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.D2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D2.Location = new System.Drawing.Point(373, 733);
+            this.D2.Location = new System.Drawing.Point(420, 495);
+            this.D2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D2.Name = "D2";
-            this.D2.Size = new System.Drawing.Size(120, 120);
+            this.D2.Size = new System.Drawing.Size(137, 83);
             this.D2.TabIndex = 28;
             this.D2.UseVisualStyleBackColor = true;
             // 
@@ -390,9 +435,10 @@ namespace team4Chess
             // 
             this.C2.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C2.Location = new System.Drawing.Point(253, 733);
+            this.C2.Location = new System.Drawing.Point(283, 495);
+            this.C2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(120, 120);
+            this.C2.Size = new System.Drawing.Size(137, 83);
             this.C2.TabIndex = 29;
             this.C2.UseVisualStyleBackColor = true;
             // 
@@ -400,9 +446,10 @@ namespace team4Chess
             // 
             this.C1.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C1.Location = new System.Drawing.Point(253, 853);
+            this.C1.Location = new System.Drawing.Point(283, 575);
+            this.C1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(120, 120);
+            this.C1.Size = new System.Drawing.Size(137, 83);
             this.C1.TabIndex = 30;
             this.C1.UseVisualStyleBackColor = true;
             // 
@@ -410,9 +457,10 @@ namespace team4Chess
             // 
             this.D4.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.D4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D4.Location = new System.Drawing.Point(373, 493);
+            this.D4.Location = new System.Drawing.Point(420, 334);
+            this.D4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D4.Name = "D4";
-            this.D4.Size = new System.Drawing.Size(120, 120);
+            this.D4.Size = new System.Drawing.Size(137, 83);
             this.D4.TabIndex = 31;
             this.D4.UseVisualStyleBackColor = true;
             // 
@@ -420,9 +468,10 @@ namespace team4Chess
             // 
             this.D1.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.D1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D1.Location = new System.Drawing.Point(373, 853);
+            this.D1.Location = new System.Drawing.Point(420, 575);
+            this.D1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D1.Name = "D1";
-            this.D1.Size = new System.Drawing.Size(120, 120);
+            this.D1.Size = new System.Drawing.Size(137, 83);
             this.D1.TabIndex = 32;
             this.D1.UseVisualStyleBackColor = true;
             // 
@@ -430,9 +479,10 @@ namespace team4Chess
             // 
             this.E4.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.E4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E4.Location = new System.Drawing.Point(493, 493);
+            this.E4.Location = new System.Drawing.Point(557, 334);
+            this.E4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E4.Name = "E4";
-            this.E4.Size = new System.Drawing.Size(120, 120);
+            this.E4.Size = new System.Drawing.Size(137, 83);
             this.E4.TabIndex = 33;
             this.E4.UseVisualStyleBackColor = true;
             // 
@@ -440,9 +490,10 @@ namespace team4Chess
             // 
             this.E3.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.E3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E3.Location = new System.Drawing.Point(493, 613);
+            this.E3.Location = new System.Drawing.Point(557, 416);
+            this.E3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E3.Name = "E3";
-            this.E3.Size = new System.Drawing.Size(120, 120);
+            this.E3.Size = new System.Drawing.Size(137, 83);
             this.E3.TabIndex = 34;
             this.E3.UseVisualStyleBackColor = true;
             // 
@@ -450,9 +501,10 @@ namespace team4Chess
             // 
             this.E2.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.E2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E2.Location = new System.Drawing.Point(493, 733);
+            this.E2.Location = new System.Drawing.Point(557, 495);
+            this.E2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E2.Name = "E2";
-            this.E2.Size = new System.Drawing.Size(120, 120);
+            this.E2.Size = new System.Drawing.Size(137, 83);
             this.E2.TabIndex = 35;
             this.E2.UseVisualStyleBackColor = true;
             // 
@@ -460,9 +512,10 @@ namespace team4Chess
             // 
             this.E1.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.E1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E1.Location = new System.Drawing.Point(493, 853);
+            this.E1.Location = new System.Drawing.Point(557, 575);
+            this.E1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E1.Name = "E1";
-            this.E1.Size = new System.Drawing.Size(120, 120);
+            this.E1.Size = new System.Drawing.Size(137, 83);
             this.E1.TabIndex = 36;
             this.E1.UseVisualStyleBackColor = true;
             // 
@@ -470,9 +523,10 @@ namespace team4Chess
             // 
             this.F4.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.F4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F4.Location = new System.Drawing.Point(613, 493);
+            this.F4.Location = new System.Drawing.Point(695, 334);
+            this.F4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F4.Name = "F4";
-            this.F4.Size = new System.Drawing.Size(120, 120);
+            this.F4.Size = new System.Drawing.Size(137, 83);
             this.F4.TabIndex = 37;
             this.F4.UseVisualStyleBackColor = true;
             // 
@@ -480,9 +534,10 @@ namespace team4Chess
             // 
             this.F2.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.F2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F2.Location = new System.Drawing.Point(613, 733);
+            this.F2.Location = new System.Drawing.Point(695, 495);
+            this.F2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F2.Name = "F2";
-            this.F2.Size = new System.Drawing.Size(120, 120);
+            this.F2.Size = new System.Drawing.Size(137, 83);
             this.F2.TabIndex = 38;
             this.F2.UseVisualStyleBackColor = true;
             // 
@@ -490,9 +545,10 @@ namespace team4Chess
             // 
             this.F3.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.F3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F3.Location = new System.Drawing.Point(613, 613);
+            this.F3.Location = new System.Drawing.Point(695, 416);
+            this.F3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F3.Name = "F3";
-            this.F3.Size = new System.Drawing.Size(120, 120);
+            this.F3.Size = new System.Drawing.Size(137, 83);
             this.F3.TabIndex = 39;
             this.F3.UseVisualStyleBackColor = true;
             // 
@@ -500,9 +556,10 @@ namespace team4Chess
             // 
             this.F1.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.F1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F1.Location = new System.Drawing.Point(613, 853);
+            this.F1.Location = new System.Drawing.Point(695, 575);
+            this.F1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F1.Name = "F1";
-            this.F1.Size = new System.Drawing.Size(120, 120);
+            this.F1.Size = new System.Drawing.Size(137, 83);
             this.F1.TabIndex = 40;
             this.F1.UseVisualStyleBackColor = true;
             // 
@@ -510,9 +567,10 @@ namespace team4Chess
             // 
             this.G4.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.G4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G4.Location = new System.Drawing.Point(733, 493);
+            this.G4.Location = new System.Drawing.Point(832, 334);
+            this.G4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G4.Name = "G4";
-            this.G4.Size = new System.Drawing.Size(120, 120);
+            this.G4.Size = new System.Drawing.Size(137, 83);
             this.G4.TabIndex = 41;
             this.G4.UseVisualStyleBackColor = true;
             // 
@@ -520,9 +578,10 @@ namespace team4Chess
             // 
             this.H4.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.H4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H4.Location = new System.Drawing.Point(853, 493);
+            this.H4.Location = new System.Drawing.Point(969, 334);
+            this.H4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H4.Name = "H4";
-            this.H4.Size = new System.Drawing.Size(120, 120);
+            this.H4.Size = new System.Drawing.Size(137, 83);
             this.H4.TabIndex = 42;
             this.H4.UseVisualStyleBackColor = true;
             // 
@@ -530,9 +589,10 @@ namespace team4Chess
             // 
             this.G3.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.G3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G3.Location = new System.Drawing.Point(733, 613);
+            this.G3.Location = new System.Drawing.Point(832, 416);
+            this.G3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G3.Name = "G3";
-            this.G3.Size = new System.Drawing.Size(120, 120);
+            this.G3.Size = new System.Drawing.Size(137, 83);
             this.G3.TabIndex = 43;
             this.G3.UseVisualStyleBackColor = true;
             // 
@@ -540,9 +600,10 @@ namespace team4Chess
             // 
             this.H3.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.H3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H3.Location = new System.Drawing.Point(853, 613);
+            this.H3.Location = new System.Drawing.Point(969, 416);
+            this.H3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H3.Name = "H3";
-            this.H3.Size = new System.Drawing.Size(120, 120);
+            this.H3.Size = new System.Drawing.Size(137, 83);
             this.H3.TabIndex = 44;
             this.H3.UseVisualStyleBackColor = true;
             // 
@@ -550,9 +611,10 @@ namespace team4Chess
             // 
             this.G1.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G1.Location = new System.Drawing.Point(733, 853);
+            this.G1.Location = new System.Drawing.Point(832, 575);
+            this.G1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G1.Name = "G1";
-            this.G1.Size = new System.Drawing.Size(120, 120);
+            this.G1.Size = new System.Drawing.Size(137, 83);
             this.G1.TabIndex = 45;
             this.G1.UseVisualStyleBackColor = true;
             // 
@@ -560,9 +622,10 @@ namespace team4Chess
             // 
             this.H2.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.H2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H2.Location = new System.Drawing.Point(853, 733);
+            this.H2.Location = new System.Drawing.Point(969, 495);
+            this.H2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H2.Name = "H2";
-            this.H2.Size = new System.Drawing.Size(120, 120);
+            this.H2.Size = new System.Drawing.Size(137, 83);
             this.H2.TabIndex = 46;
             this.H2.UseVisualStyleBackColor = true;
             // 
@@ -570,9 +633,10 @@ namespace team4Chess
             // 
             this.G2.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G2.Location = new System.Drawing.Point(733, 733);
+            this.G2.Location = new System.Drawing.Point(832, 495);
+            this.G2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G2.Name = "G2";
-            this.G2.Size = new System.Drawing.Size(120, 120);
+            this.G2.Size = new System.Drawing.Size(137, 83);
             this.G2.TabIndex = 47;
             this.G2.UseVisualStyleBackColor = true;
             // 
@@ -580,9 +644,10 @@ namespace team4Chess
             // 
             this.G6.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.G6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G6.Location = new System.Drawing.Point(733, 253);
+            this.G6.Location = new System.Drawing.Point(832, 185);
+            this.G6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G6.Name = "G6";
-            this.G6.Size = new System.Drawing.Size(120, 120);
+            this.G6.Size = new System.Drawing.Size(137, 76);
             this.G6.TabIndex = 48;
             this.G6.UseVisualStyleBackColor = true;
             // 
@@ -590,9 +655,10 @@ namespace team4Chess
             // 
             this.F6.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.F6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F6.Location = new System.Drawing.Point(613, 253);
+            this.F6.Location = new System.Drawing.Point(695, 185);
+            this.F6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F6.Name = "F6";
-            this.F6.Size = new System.Drawing.Size(120, 120);
+            this.F6.Size = new System.Drawing.Size(137, 76);
             this.F6.TabIndex = 49;
             this.F6.UseVisualStyleBackColor = true;
             // 
@@ -600,9 +666,10 @@ namespace team4Chess
             // 
             this.E6.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.E6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E6.Location = new System.Drawing.Point(493, 253);
+            this.E6.Location = new System.Drawing.Point(557, 185);
+            this.E6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E6.Name = "E6";
-            this.E6.Size = new System.Drawing.Size(120, 120);
+            this.E6.Size = new System.Drawing.Size(137, 76);
             this.E6.TabIndex = 50;
             this.E6.UseVisualStyleBackColor = true;
             // 
@@ -610,9 +677,10 @@ namespace team4Chess
             // 
             this.D6.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.D6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D6.Location = new System.Drawing.Point(373, 253);
+            this.D6.Location = new System.Drawing.Point(420, 185);
+            this.D6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D6.Name = "D6";
-            this.D6.Size = new System.Drawing.Size(120, 120);
+            this.D6.Size = new System.Drawing.Size(137, 76);
             this.D6.TabIndex = 51;
             this.D6.UseVisualStyleBackColor = true;
             // 
@@ -620,9 +688,10 @@ namespace team4Chess
             // 
             this.H1.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.H1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H1.Location = new System.Drawing.Point(853, 853);
+            this.H1.Location = new System.Drawing.Point(969, 575);
+            this.H1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(120, 120);
+            this.H1.Size = new System.Drawing.Size(137, 83);
             this.H1.TabIndex = 52;
             this.H1.UseVisualStyleBackColor = true;
             // 
@@ -630,9 +699,10 @@ namespace team4Chess
             // 
             this.C6.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.C6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C6.Location = new System.Drawing.Point(253, 253);
+            this.C6.Location = new System.Drawing.Point(283, 185);
+            this.C6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C6.Name = "C6";
-            this.C6.Size = new System.Drawing.Size(120, 120);
+            this.C6.Size = new System.Drawing.Size(137, 76);
             this.C6.TabIndex = 53;
             this.C6.UseVisualStyleBackColor = true;
             // 
@@ -640,9 +710,10 @@ namespace team4Chess
             // 
             this.B6.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.B6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B6.Location = new System.Drawing.Point(133, 253);
+            this.B6.Location = new System.Drawing.Point(146, 185);
+            this.B6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B6.Name = "B6";
-            this.B6.Size = new System.Drawing.Size(120, 120);
+            this.B6.Size = new System.Drawing.Size(137, 76);
             this.B6.TabIndex = 54;
             this.B6.UseVisualStyleBackColor = true;
             // 
@@ -650,9 +721,10 @@ namespace team4Chess
             // 
             this.A6.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.A6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A6.Location = new System.Drawing.Point(13, 253);
+            this.A6.Location = new System.Drawing.Point(9, 185);
+            this.A6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A6.Name = "A6";
-            this.A6.Size = new System.Drawing.Size(120, 120);
+            this.A6.Size = new System.Drawing.Size(137, 76);
             this.A6.TabIndex = 55;
             this.A6.UseVisualStyleBackColor = true;
             // 
@@ -660,9 +732,10 @@ namespace team4Chess
             // 
             this.H7.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.H7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.H7.Location = new System.Drawing.Point(853, 133);
+            this.H7.Location = new System.Drawing.Point(969, 116);
+            this.H7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.H7.Name = "H7";
-            this.H7.Size = new System.Drawing.Size(120, 120);
+            this.H7.Size = new System.Drawing.Size(137, 76);
             this.H7.TabIndex = 56;
             this.H7.UseVisualStyleBackColor = true;
             this.H7.Click += new System.EventHandler(this.OnClick);
@@ -671,9 +744,10 @@ namespace team4Chess
             // 
             this.G7.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.G7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.G7.Location = new System.Drawing.Point(733, 133);
+            this.G7.Location = new System.Drawing.Point(832, 116);
+            this.G7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.G7.Name = "G7";
-            this.G7.Size = new System.Drawing.Size(120, 120);
+            this.G7.Size = new System.Drawing.Size(137, 76);
             this.G7.TabIndex = 57;
             this.G7.UseVisualStyleBackColor = true;
             // 
@@ -681,9 +755,10 @@ namespace team4Chess
             // 
             this.F7.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.F7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.F7.Location = new System.Drawing.Point(613, 133);
+            this.F7.Location = new System.Drawing.Point(695, 116);
+            this.F7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.F7.Name = "F7";
-            this.F7.Size = new System.Drawing.Size(120, 120);
+            this.F7.Size = new System.Drawing.Size(137, 76);
             this.F7.TabIndex = 58;
             this.F7.UseVisualStyleBackColor = true;
             // 
@@ -691,9 +766,10 @@ namespace team4Chess
             // 
             this.E7.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.E7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.E7.Location = new System.Drawing.Point(493, 133);
+            this.E7.Location = new System.Drawing.Point(557, 116);
+            this.E7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.E7.Name = "E7";
-            this.E7.Size = new System.Drawing.Size(120, 120);
+            this.E7.Size = new System.Drawing.Size(137, 76);
             this.E7.TabIndex = 59;
             this.E7.UseVisualStyleBackColor = true;
             // 
@@ -701,9 +777,10 @@ namespace team4Chess
             // 
             this.D7.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.D7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.D7.Location = new System.Drawing.Point(373, 133);
+            this.D7.Location = new System.Drawing.Point(420, 116);
+            this.D7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.D7.Name = "D7";
-            this.D7.Size = new System.Drawing.Size(120, 120);
+            this.D7.Size = new System.Drawing.Size(137, 76);
             this.D7.TabIndex = 60;
             this.D7.UseVisualStyleBackColor = true;
             // 
@@ -711,9 +788,10 @@ namespace team4Chess
             // 
             this.C7.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.C7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.C7.Location = new System.Drawing.Point(253, 133);
+            this.C7.Location = new System.Drawing.Point(283, 116);
+            this.C7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.C7.Name = "C7";
-            this.C7.Size = new System.Drawing.Size(120, 120);
+            this.C7.Size = new System.Drawing.Size(137, 76);
             this.C7.TabIndex = 61;
             this.C7.UseVisualStyleBackColor = true;
             // 
@@ -721,9 +799,10 @@ namespace team4Chess
             // 
             this.B7.BackgroundImage = global::team4Chess.Properties.Resources.chessWhite;
             this.B7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.B7.Location = new System.Drawing.Point(133, 133);
+            this.B7.Location = new System.Drawing.Point(146, 116);
+            this.B7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.B7.Name = "B7";
-            this.B7.Size = new System.Drawing.Size(120, 120);
+            this.B7.Size = new System.Drawing.Size(137, 76);
             this.B7.TabIndex = 62;
             this.B7.UseVisualStyleBackColor = true;
             // 
@@ -731,29 +810,190 @@ namespace team4Chess
             // 
             this.A7.BackgroundImage = global::team4Chess.Properties.Resources.chessBlack;
             this.A7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.A7.Location = new System.Drawing.Point(13, 133);
+            this.A7.Location = new System.Drawing.Point(9, 116);
+            this.A7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.A7.Name = "A7";
-            this.A7.Size = new System.Drawing.Size(120, 120);
+            this.A7.Size = new System.Drawing.Size(137, 76);
             this.A7.TabIndex = 63;
             this.A7.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1000, 853);
+            this.button1.Location = new System.Drawing.Point(1143, 1137);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 22);
+            this.button1.Size = new System.Drawing.Size(93, 29);
             this.button1.TabIndex = 64;
             this.button1.Text = "Main Menu";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mainMenuToolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1571, 28);
+            this.menuStrip1.TabIndex = 65;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mainMenuToolStripMenuItem1
+            // 
+            this.mainMenuToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.returnToolStripMenuItem});
+            this.mainMenuToolStripMenuItem1.Name = "mainMenuToolStripMenuItem1";
+            this.mainMenuToolStripMenuItem1.Size = new System.Drawing.Size(97, 24);
+            this.mainMenuToolStripMenuItem1.Text = "Main Menu";
+            // 
+            // returnToolStripMenuItem
+            // 
+            this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
+            this.returnToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.returnToolStripMenuItem.Text = "Return";
+            this.returnToolStripMenuItem.Click += new System.EventHandler(this.returnToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(1203, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 20);
+            this.label1.TabIndex = 66;
+            this.label1.Text = "White Pieces Taken:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(1203, 104);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 20);
+            this.label2.TabIndex = 67;
+            this.label2.Text = "Pawns:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(1203, 124);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.TabIndex = 68;
+            this.label3.Text = "Knights:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(1203, 144);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 20);
+            this.label4.TabIndex = 69;
+            this.label4.Text = "Bishops:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(1203, 164);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 20);
+            this.label5.TabIndex = 70;
+            this.label5.Text = "Rooks";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(1203, 185);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 20);
+            this.label6.TabIndex = 71;
+            this.label6.Text = "Queens:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(1203, 205);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 20);
+            this.label7.TabIndex = 72;
+            this.label7.Text = "Black Pieces Taken:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(1203, 225);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 20);
+            this.label8.TabIndex = 73;
+            this.label8.Text = "Pawns:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(1203, 245);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 20);
+            this.label9.TabIndex = 74;
+            this.label9.Text = "Knights:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(1203, 265);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 20);
+            this.label10.TabIndex = 75;
+            this.label10.Text = "Bishops:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(1203, 285);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 20);
+            this.label11.TabIndex = 76;
+            this.label11.Text = "Rooks:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(1203, 305);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 20);
+            this.label12.TabIndex = 77;
+            this.label12.Text = "Queens:";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1036, 497);
+            this.ClientSize = new System.Drawing.Size(1571, 1325);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.A7);
             this.Controls.Add(this.B7);
@@ -819,10 +1059,15 @@ namespace team4Chess
             this.Controls.Add(this.F8);
             this.Controls.Add(this.G8);
             this.Controls.Add(this.A8);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -894,6 +1139,21 @@ namespace team4Chess
         private System.Windows.Forms.Button A7;
         private System.Windows.Forms.Button A5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem returnToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
 

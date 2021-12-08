@@ -6,6 +6,7 @@ namespace ChessBoardModel2
 {
     public class Board
     {
+        //public Player Turn { get; set; }
         int Size { get; set; }
         bool passantPresent = false;
         Cell[,] TheGrid { get; set; }

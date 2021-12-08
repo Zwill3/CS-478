@@ -24,10 +24,11 @@ namespace team4Chess
         bool pieceSelected = false;
         int moverX;
         int moverY;
-
+       
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -155,6 +156,16 @@ namespace team4Chess
             this.Hide();
             UserInterface menuReset = new UserInterface();
             menuReset.ShowDialog();
+        }
+
+        private void returnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var MainMenu = new UserInterface();
+            var chessboard = new Form1();
+            Visible = false;
+            MainMenu.Visible = true;
+
+
         }
     }
 }

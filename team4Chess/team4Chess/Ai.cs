@@ -4,9 +4,10 @@ using System.Text;
 
 namespace team4Chess
 {
-    class Ai
+    public class Ai
     {
-        public static int DEPTH = 4;
+        /*
+       public static int DEPTH = 4;
         public static bool RUNNING = false;
         public static bool STOP = false;
         private static Player MAX = Player.BLACK;
@@ -123,7 +124,10 @@ namespace team4Chess
                     }
                     return a;
                 }
+       
             }
+       
         }
+       */ //ending
             }
 }

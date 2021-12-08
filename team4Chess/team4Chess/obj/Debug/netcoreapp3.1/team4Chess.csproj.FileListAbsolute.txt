@@ -70,3 +70,4 @@ C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.pdb
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.genruntimeconfig.cache
 C:\Users\Lucas Zoglmann\Documents\GitHub\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.csprojAssemblyReference.cache
+E:\Chess_Repository\CS-478\team4Chess\team4Chess\obj\Debug\netcoreapp3.1\team4Chess.UIsinglePlayer.resources
